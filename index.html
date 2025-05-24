@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>:: Luis Reyes</title>
+    <style>
+        /* Estilo general */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        img {
+            max-width: 400px;
+            height: auto;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+
+        a.boton-descarga {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        a.boton-descarga:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .footer-izquierda {
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-izquierda img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .footer-derecha {
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-derecha i {
+            margin-right: 5px;
+        }
+
+        @media (max-width: 600px) {
+            footer {
+                flex-direction: column;
+                text-align: center;
+            }
+            .footer-derecha {
+                margin-top: 10px;
+            }
+        }
+    </style>
+
+    <!-- Íconos Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<main>
+    <h1>Vista previa de imagen</h1>
+    <img src="img/banner_milton.jpg" alt="Vista previa de imagen">
+    <br>
+    <a href="img/banner_milton.jpg" download="banner_publicidad_milton" class="boton-descarga">Descargar imagen</a>
+</main>
+
+<footer>
+    <div class="footer-izquierda">
+        <img src="img/lreyes.png" alt="Logotipo">
+        <span>© Web hosting and maintenance services</span>
+    </div>
+    <div class="footer-derecha">
+        <i class="fas fa-phone-alt"></i>
+        <span>Repositorio</span>
+    </div>
+</footer>
+
+</body>
+</html>
